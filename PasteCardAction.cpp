@@ -38,5 +38,7 @@ void PasteCardAction::Execute()
 	if (PasteCardinfo != NULL)
 	{
 		pGrid->AddObjectToCell(Object);
+		pGrid->UpdateInterface();
+
 	}
 }
