@@ -38,6 +38,7 @@ void CutCardAction::Execute()
 	if (CutCardinfo != NULL)
 	{
 		pGrid->RemoveObjectFromCell(position);
+		pGrid->UpdateInterface();
 		pGrid->SetClipboard(CutCardinfo);
 	}
 }
